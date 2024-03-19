@@ -1,0 +1,55 @@
+.main {
+  font-family: inherit;
+  font-size: 20px;
+  background: #212121;
+  color: white;
+  fill: rgb(155, 153, 153);
+  padding: 0.7em 1em;
+  padding-left: 0.9em;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  border: none;
+  border-radius: 15px;
+  font-weight: 1000;
+}
+
+.main span {
+  display: block;
+  margin-left: 0.3em;
+  transition: all 0.3s ease-in-out;
+}
+
+.main svg {
+  display: block;
+  transform-origin: center center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.main:hover {
+  background: #000;
+}
+
+.main:hover .svg-wrapper {
+  transform: scale(1.25);
+  transition: 0.5s linear;
+}
+
+.main:hover .icon {
+  transform: translateX(1.6em) scale(1.1);
+  fill: #fff;
+}
+
+.main:hover .icon1 {
+  transform: translateX(1.1em) scale(1.1);
+  fill: #fff;
+}
+
+.main:hover span {
+  opacity: 0;
+  transition: 0.5s linear;
+}
+
+.main:active {
+  transform: scale(0.95);
+}
